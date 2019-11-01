@@ -1,0 +1,12 @@
+training/
+docs/
+samples/
+README.*
+.idea/
+.git/
+.gitignore
+tests/
+.pytest_cache
+__pycache__
+.DS_Store
+

@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: max-ocr
+spec:
+  selector:
+    app: max-ocr
+  ports:
+  - port: 5000
+  type: NodePort
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: max-ocr
+  labels:
+    app: max-ocr
+spec:
+  selector:
+    matchLabels:
+      app: max-ocr
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: max-ocr
+    spec:
+      containers:
+      - name: max-ocr
+        image: codait/max-ocr:latest
+        ports:
+        - containerPort: 5000
