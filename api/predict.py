@@ -46,8 +46,6 @@ class ModelPredictAPI(PredictAPI):
         image = self.model_wrapper.read_image(image)
         text = self.model_wrapper.predict(image)
 
-        print(text)
-
         result['text'] = text
         result['status'] = 'ok'
 
