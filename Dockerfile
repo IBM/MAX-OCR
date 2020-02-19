@@ -20,4 +20,6 @@ COPY . /workspace
 
 EXPOSE 5000
 
+ENV LC_ALL=C
+
 CMD python /workspace/app.py
