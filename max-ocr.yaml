@@ -27,6 +27,6 @@ spec:
     spec:
       containers:
       - name: max-ocr
-        image: codait/max-ocr:latest
+        image: quay.io/codait/max-ocr:latest
         ports:
         - containerPort: 5000
