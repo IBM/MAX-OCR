@@ -1,4 +1,4 @@
-FROM codait/max-base:v1.3.2
+FROM quay.io/codait/max-base:v1.3.2
 
 RUN apt-get update \
      && apt-get install -y \
