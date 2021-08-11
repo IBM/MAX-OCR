@@ -1,2 +1,2 @@
-tesserocr==2.4.1
+tesserocr==2.5.2
 pillow==8.2.0
