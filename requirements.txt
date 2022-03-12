@@ -1,2 +1,2 @@
 tesserocr==2.5.2
-pillow==8.2.0
+pillow==9.0.1
